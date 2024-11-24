@@ -26,16 +26,16 @@ You can import the functions you need directly
 
 CommonJS
 ```javascript
-const { isOdd, isEven } = require('swissknifejs');
+const { MathUtils } = require('swissknifejs');
 ```
 
 ES Modules
 ```javascript
-import { isOdd, isEven } from 'swissknifejs';
+import { MathUtils } from 'swissknifejs';
 ```
 
 ## Documentation
-#### .isOdd
+#### MathUtils.isOdd
 
 Determines whether a number is odd.
 
@@ -52,7 +52,7 @@ isOdd('3'); // true
 isOdd(4); // false
 ```
 
-#### .isEven
+#### MathUtils.isEven
 
 Determines whether a number is even.
 
@@ -68,6 +68,16 @@ isEven(4); // true
 isEven('6'); // true
 isEven(3); // false
 ```
+
+#### MathUtils.shuffle
+
+Shuffles the given input randomly using the Fisher-Yates Shuffle Algorithm.
+
+**Params**
+
+* element **[(number | string | boolean)[] | string]**: The input to shuffle. Can be an array of strings, numbers, or booleans,
+  or a string representing characters to shuffle.
+* Returns **[(number | string | boolean)[] | string]**: The shuffled input, maintaining the same type (array or string).
 
 ## Contributing
 
