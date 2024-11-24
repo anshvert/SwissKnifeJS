@@ -1,2 +1,2 @@
-export * from "./functions"
+export * from "./lib/math"
 export * from "./types"

@@ -1,1 +1,1 @@
-export type IsOdd = number | string
+export type IsOddEvenProp = number | string
