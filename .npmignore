@@ -3,5 +3,5 @@
 .idea
 tsconfig.json
 tsup.config.ts
-
+/SwissTest
 

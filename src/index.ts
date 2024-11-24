@@ -1,2 +1,2 @@
-export * from "./lib/math"
-export * from "./types"
+export * from "./utils/math"
+export * from "./utils/types"

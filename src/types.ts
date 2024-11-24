@@ -1,1 +1,0 @@
-export type IsOddEvenProp = number | string
