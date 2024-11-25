@@ -11,13 +11,13 @@ importers:
       is-number:
         specifier: ^7.0.0
         version: 7.0.0
-      swissknifejs:
-        specifier: ^0.0.1
-        version: 0.0.1
     devDependencies:
       '@types/is-number':
         specifier: ^7.0.5
         version: 7.0.5
+      '@types/node':
+        specifier: ^22.9.3
+        version: 22.9.3
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(typescript@5.6.3)
@@ -293,6 +293,9 @@ packages:
   '@types/is-number@7.0.5':
     resolution: {integrity: sha512-NGmRpXeZg9qDX+AlmBeq4Xk9ruTMj0KfzspDCxTLAcpbts2EjojAvY6A1eumKHInMwGY4xHM8ILA9CHRHfUUWA==}
 
+  '@types/node@22.9.3':
+    resolution: {integrity: sha512-F3u1fs/fce3FFk+DAxbxc78DF8x0cY09RRL8GnXLmkJ1jvx3TtPdWoTT5/NiYfI5ASqXBmfqJi9dZ3gxMx4lzw==}
+
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
@@ -542,9 +545,6 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  swissknifejs@0.0.1:
-    resolution: {integrity: sha512-v7C+bUZ0pk1mNtT7CsUlZfPCfT//S0J+c8t7AACTzdeEexb+9As29qfCPT6JTmzVE7hozasKWtZ6JAsxdT4aYw==}
-
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
     engines: {node: '>=0.8'}
@@ -592,6 +592,9 @@ packages:
     resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -772,6 +775,10 @@ snapshots:
   '@types/estree@1.0.6': {}
 
   '@types/is-number@7.0.5': {}
+
+  '@types/node@22.9.3':
+    dependencies:
+      undici-types: 6.19.8
 
   ansi-regex@5.0.1: {}
 
@@ -1007,8 +1014,6 @@ snapshots:
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
 
-  swissknifejs@0.0.1: {}
-
   thenify-all@1.6.0:
     dependencies:
       thenify: 3.3.1
@@ -1059,6 +1064,8 @@ snapshots:
       - yaml
 
   typescript@5.6.3: {}
+
+  undici-types@6.19.8: {}
 
   webidl-conversions@4.0.2: {}
 
