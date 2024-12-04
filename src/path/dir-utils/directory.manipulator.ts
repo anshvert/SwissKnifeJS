@@ -4,6 +4,7 @@ import { EnglishCharactersAndNumbers } from "./constants";
 import { MockFileGenerateOptions } from "./types";
 import fs from "fs"
 import * as crypto from 'crypto';
+import { resolve } from "path"
 
 /**
  * A class that provides helper function to generate test/mock files on a specified directory.
@@ -122,7 +123,7 @@ class MockFileGenerator {
  */
 export class DirectoryManipulator extends Path {
     constructor(path: string) {
-        super(path);
+        super(resolve(path));
     }
 
     /**
@@ -143,4 +144,5 @@ export class DirectoryManipulator extends Path {
     }
 }
 
-
+const dir: DirectoryManipulator = new DirectoryManipulator("../")
+console.log(dir.getPath())
